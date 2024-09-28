@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--V 2.5 APRIL 2024-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2.5 Feedback Machine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <link rel="stylesheet" href=""> -->
+    <style>
+h1{margin-bottom:0;padding-bottom:0;}
+#blurb{margin-top:0;padding-top: 0;}
+#controls{position:fixed;}
+.headText{font-weight: bold; font-size: 1.5em; text-transform: uppercase;}
+#btn__copy{font-size: 2em;}
+
+#filebox{width: 170px;border: 3px solid black;position:fixed;top:0;right:0;}
+.setControlsRight{bottom: 20px; right:20px;}
+.setControlsLeft{bottom: 20px; left:20px;}
+    </style>
+</head>
+<body>
+<div id="container">
+    
+<!-- FILE LOAD/SAVE -->
+    <div id="filebox">
+        <p>
+            <input type="file" id="filebox_load" accept=".js">
+            <button id="filebox_save">SAVE FILE</button></p>
+    </div>
+    
+<!-- GUI ONLOAD HEADER -->    
+    <header>
+        <div id="blurbBox">
+            <h1 id="mainHeading">Feedback Machine <em>2.5</em></h1>
+            <p id="blurb">Add headings to categorize your feedback, then select a heading when adding a comment. Check the headings and comments you wish to paste into the student feedback, then click COPY TEXT. You can reset the checkboxes between students by clicking RESET SELECTIONS, or simply uncheck the ones that do not apply.</p>
+        </div>
+    </header>
+
+
+<!--======== INPUT CONTROLS ========-->
+	<div id="controls" class="setControlsRight">
+
+		<form name="newFb">
+			<fieldset>
+				<legend>Add New Comments &amp; Headings</legend>
+				<!--NEW HEADING-->
+				<input type="text" id="newHead"><button id="btn_newHead">Add New Heading</button><br>
+				
+				<!--STORED HEADINGS-->
+				<select name="newFb_head" id="textHead"><option id="x">==SELECT HEADING==</option></select><br>
+				
+				<!--NEW COMMENT-->
+				<input type="text" name="newFb_txt" id="textIn">						
+				<input type="submit" value="Add New Comment">
+				
+				<!--LEFT/RIGHT CONTROLS-->
+				<br>
+				<input type="radio" name="leftright" id="left" value="L"><label for="left">LEFT</label>
+				<input type="radio" name="leftright" id="right" value="R" checked><label for="right">RIGHT</label>
+			</fieldset>
+		</form>
+		
+<!-- COPY TEXT AND RESET BUTTONS -->
+		<button id="btn__copy">COPY TEXT</button>
+		<button id="btn__reset">RESET SELECTIONS</button>
+	</div>
+        
+        
+    
+    
+<!--== FEEDBACK OUTPUT ==-->
+    <div id="feedback"></div>
+
+</div><!--== END container ==-->
+    
+
+
+<script id="ext_script" src=""></script><!--FEEDBACK SCRIPT TO BE LOADED-->
+<script src="feedback.js" ></script><!--LOGIC SCRIPT-->
+</body>
+</html>
