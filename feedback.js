@@ -288,10 +288,14 @@ function loadFile(){
 */
 function getFile(){
 	let fullPath = btn_load.value;
+	//Get filename
 	let fileName = fullPath.substring(12);
+	//Get foldername from first 2 chars of filename
+	let folder = fullPath.substring(12,14);	
+
 	let newScript = document.createElement('script');
 	newScript.onload = loadFile;
-	newScript.src = fileName;
+	newScript.src = folder + "/" + fileName;
 	document.head.appendChild(newScript);
 	headerText.style.display = "none";
 }//end getFile
