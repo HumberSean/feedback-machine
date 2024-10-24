@@ -1,7 +1,6 @@
 //CAPSTONE-TECHNICAL BARRIERS ASSESSMENT
 
 
-
 var feedBack = [];
 
 var item0=["CONTENT CHALLENGES", "How will you mitigate this challenge?", "What content challenges do you anticipate?", "By 'content' we mean the text and images of the site. Will this present a challenge for you? How will you deal with the challenge of finding the text and images you need?"];
