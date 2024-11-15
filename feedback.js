@@ -1,6 +1,8 @@
 /* Feedback Machine by Sean Doyle
 Create feedback items with categories to paste into student feedback.
 
+v 2.6 November 2024
+-Keep main feedback heading checked when resetting.
 v 2.5 April 2024
 -Make h1 call reset function
 -Add autocheck heading when feedback checked or added
@@ -233,7 +235,7 @@ function addComment(){
 */
 function resetSelections(){
     var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
-    for (let i = 0; i < allCheckboxes.length; i++){
+    for (let i = 1; i < allCheckboxes.length; i++){
         allCheckboxes[i].checked = false;
     }
     //re-Check the default checkboxes
