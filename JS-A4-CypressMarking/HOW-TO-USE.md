@@ -10,15 +10,21 @@
 
 5. If changes are made, run Cypress again.
 
-6. Rename assign4.js in the root folder to assign4-SOLVED.js.
+6. Copy assign4.js in the root folder as assign4-SOLVED.js.
 
-7. Create a folder with cmd.exe running and the command		ren *.js assign4.js
+7. Open assign4.js in Npp and delete contents.
 
-8. Drag student file into this folder and run the command 	
+8. To grade, open student js and paste into assign4.js.
 
-8. Move new student file into JS-A-4-CYPRESSchecker root folder
+9. Run Cypress
 
-10. Run Cypress
+10. When finished, rename assign4-SOLVED.js back to assign4.js
 
-11. When finished, rename assign4-SOLVED.js back to assign4.js
+//7. Create a folder with cmd.exe running and the command		ren *.js assign4.js
+
+//8. Drag student file into this folder and run the command 	
+
+//8. Move new student file into JS-A-4-CYPRESSchecker root folder
+
+
 
