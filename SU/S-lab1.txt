@@ -1,0 +1,35 @@
+//Security Lab 1 Coding Standards
+//Feedback
+
+
+
+
+FEEDBACK
+Good job!
+We will be using this lab in later classes so it is worthwhile to take the time and perfect it. You will have fewer issues later.
+See rubric for more feedback.
+PART 1
+Use BEM for ids and name attributes: login__user login__pass
+Missing the heading.
+Does not follow BEM. Elements need 2 underscores: output__text
+Output value should be in its own span. Notice label is plain but value is bold.
+fieldset and legend go inside form element.
+PART 2
+I was expecting the fields to turn red (see my CSS rule). We should not rely on the HTML validators.
+This does not pass jslint.com
+#6 Required to add focus to error field.
+EXTRA CHALLENGE
+Nice job!
+Nice job adding the class!
+
+
+FEEDBACK
+See rubric for more feedback.
+PART 1
+Missing the heading.
+PART 2
+This does not pass jslint.com
+Required to add focus to error field.(#6)
+EXTRA CHALLENGE
+Nice job!
+
