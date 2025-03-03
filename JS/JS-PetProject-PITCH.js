@@ -8,7 +8,7 @@ var item0=["FEEDBACK", "Project was not approved by the deadline.", "Let's say a
 var item1=["MUST HAVE", "We specified", "Let's say", "+=", "Move to here."];
 var item2=["SHOULD HAVE", "+=", "Move to here."];
 var item3=["NICE TO HAVE", "Move to here."];
-var item4=["NEXT STEPS", "Please proceed with your Figma mockup."];
+var item4=["NEXT STEPS", "Please proceed with your Figma mockup.", "Please revise based on feedback and resubmit."];
 
 
 feedBack.push(item0, item1, item2, item3, item4);
