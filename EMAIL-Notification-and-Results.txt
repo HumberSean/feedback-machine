@@ -1,0 +1,100 @@
+//============ PLAGIARISM NOTIFICATION AND MEETING RESULTS =================
+
+//====== NOTIFICATION
+SUBJECT:
+Possible Incident of Academic Misconduct
+
+Hello Arun,
+
+An issue of possible plagiarism has been detected in your Lab 4 for Front-End Web Development.
+
+I wish to discuss this with you before our next class. If you are available, I can meet online during Reading Week, or we can meet on Tuesday before class if that is preferable.
+
+Please confirm that you have received this email.
+
+Thank you.
+
+
+
+Hello Dhruv,
+
+An issue of possible plagiarism has been detected in your Assignment 5 for Front-End Web Development.
+
+Please confirm that you have received this email, and let me know if you are available to meet online today or tomorrow to resolve this issue.
+
+Thank you.
+
+Sean Doyle
+
+
+
+
+
+
+
+//====== RESULTS
+SUBJECT:
+Academic Misconduct Follow-up
+
+Hello Jinal,
+
+Thank you for meeting with me yesterday to discuss the issue of academic misconduct regarding the Express API Assignment in Full-Stack Web Development.  
+
+In our meeting you acknowledged:
+-The similarities between your design and code and that of another student.
+-You used Joanna's demo code (Week 6 lesson) and your own code from a previous lab.
+-You discussed and searched for your portfolio design with another student.
+-You said that you created your own code and that the similarities were due to Bootstrap, the demo code and the auto-formatter of your IDE.
+
+In reviewing the submissions and the meeting notes, there are too many similarities in the submissions to be coincidence and not enough unique contributions to the submission. Accordingly, it will be a grade of zero for these assessments. Any future incidents of plagiarism in any of our courses will result in a zero for the course and I will recommend expulsion from the program.
+
+I will reiterate my insistence that you do your own work and do not: share code, show code, share computers, work together, or discuss assignments.
+
+We are all here to help and to support your success in the program - and as a web developer - so do not hesitate to reach out to your instructors for help, we love to help.
+
+If you have any further questions, please do not hesitate to email me or set up a meeting.
+
+Sean
+
+//====== RESULTS - ZERO FOR COURSE
+SUBJECT:
+Academic Misconduct Determination
+
+
+Hello Saahil,
+
+Thank you for meeting with me on Tuesday to discuss the issue of academic misconduct regarding the Figma Assignment in Web Design (HTTP 5121).  
+
+In that meeting you acknowledged:
+-Arun was having difficulty working with Figma
+-You shared your Figma file with Arun
+
+In our last meeting on March 5 regarding plagiarism in the Front-End Development Lab 4, you assured me that the sharing of files would not happen again. In our discussion (and the follow-up email) you were warned that the outcome for any future incident in any other course would be a final grade of zero for that course. Accordingly, this incident will mean a final grade of zero for the Web Design course.
+
+While outcomes such as this are not what either of us had wished for, they are necessary to maintain the integrity of the Web Development program. However, I wish you the best for your future endeavours.
+
+Best regards,
+
+Sean Doyle
+
+
+
+Hello Arun,
+
+Thank you for meeting with me yesterday to discuss the issue of academic misconduct regarding the Figma Assignment in Web Design (HTTP 5121).  
+
+In that meeting you acknowledged:
+- You were having difficulty getting Figma to work on your browser
+- You used Saahil’s Figma file to start your assignment
+
+In our last meeting on March 12 regarding plagiarism in the Front-End Development Lab 4 and Assignment 3, and Database Lab 4, you assured me that the sharing of files would not happen again. In our discussion (and the follow-up email) you were told to reach out to your instructor if you were having technical issues, and were warned that the outcome for any future incident in any other course would be a final grade of zero for that course. Accordingly, this incident will mean a final grade of zero for the Web Design course.
+
+While outcomes such as this are not what either of us had wished for, they are necessary to maintain the integrity of the Web Development program. However, I wish you the best for your future endeavours.
+
+Best regards,
+
+Sean Doyle
+
+
+
+
