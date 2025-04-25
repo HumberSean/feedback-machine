@@ -1,4 +1,18 @@
 //============ PLAGIARISM NOTIFICATION AND MEETING RESULTS =================
+OFFICIAL APRIL 2025
+
+Hi **[Student]** (cc: Associate Dean),
+
+As per Humber’s academic regulations ([Article 17.0](https://academic-regulations.humber.ca/2023-2024/17.0-ACADEMIC-MISCONDUCT)), we are required to notify our Associate Dean of any instances of academic misconduct. Your recent submission for **[ASSIGNMENT]** worth **[VALUE of final grade]** has **[CONTEXT – i.e. used content copied directly from website]**.
+
+I have attached supporting documentation to this e-mail.
+
+Please book a meeting with your Associate Dean, Ahmed Sagarwala, using the following link - https://calendly.com/sagarwala. You are required to book this meeting within 5 business days. If a meeting does not take place within this timeframe, zero will be provided for the deliverable. 
+
+To help you understand academic misconduct, I recommend reviewing these two resources:
+
+Academic Integrity | Plagiarism: One Form of Academic Dishonesty [YouTube video ] https://www.youtube.com/watch?v=8_SxY2jpRFc
+Academic Integrity and Citation Awareness Module [Humber Library] https://library-elearning.humber.ca/academic-integrity/preview/module.html#/
 
 //====== NOTIFICATION
 SUBJECT:
