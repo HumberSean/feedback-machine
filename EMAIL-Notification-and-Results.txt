@@ -47,6 +47,24 @@ Sean Doyle
 
 
 //====== RESULTS
+Hello Ragini,
+
+Thank you for meeting with me today to discuss the issue of academic misconduct regarding the Assignment 5 in Front-End Web Development.  
+
+In our meeting you acknowledged:
+-Your code wasn't working and you took help from a friend.
+
+Accordingly, it will be a grade of zero for this assessment. Any future incidents of plagiarism in any of our courses will result in a zero for the course and I will recommend expulsion from the program.
+
+I will reiterate my insistence that you do your own work and do not: share code, show code, share computers, work together, or discuss assignments.
+
+We are all here to help and to support your success in the program - and as a web developer - so do not hesitate to reach out to your instructors for help, we love to help.
+
+If you have any further questions, please do not hesitate to email me or set up a meeting.
+
+Sean
+
+
 SUBJECT:
 Academic Misconduct Follow-up
 
@@ -111,4 +129,28 @@ Sean Doyle
 
 
 
+Assignment 5 Misconduct Meeting
+Hi Emmanuel,
+
+Link sent for online meeting today at 3:15.
+
+Thank you.
+
+
+
+While working on the assignment, I was stuck on the alt attribute for images. In my effort to find a solution, I resorted to searching online . 
+
+
+//USE OF GENAI
+Hi Chait,
+
+Thank you, I greatly appreciate your honesty.
+
+While the use of GenAI as a coding helper will be expected of you in the industry, in our academic setting, its use is prohibited except where explicitly allowed by your instructor for a specific assessment. This is so that we can evaluate your work and your ability to deliver the learning objectives. A strong understanding of code is required to work with GenAI in order to assess its results, and the learning objectives we have set for you will lead you to that strong understanding. Similarly, the key skill of a web developer is not "coding", but problem solving. If you use a tool to solve your problems for you, you will not develop the problem solving skills that are so crucial to professional web development.
+
+Any future unauthorized use of AI in your course work may result in expulsion from the program, and having plagiarism on your Humber student record.
+
+If you have any questions or confusions about the use of AI as a student, please email me and we will clear up any outstanding issues.
+
+Thank you.
 
