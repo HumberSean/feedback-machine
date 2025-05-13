@@ -14,6 +14,23 @@ To help you understand academic misconduct, I recommend reviewing these two reso
 Academic Integrity | Plagiarism: One Form of Academic Dishonesty [YouTube video ] https://www.youtube.com/watch?v=8_SxY2jpRFc
 Academic Integrity and Citation Awareness Module [Humber Library] https://library-elearning.humber.ca/academic-integrity/preview/module.html#/
 
+
+Hello Dhara (cc: Associate Dean),
+
+As per Humber’s academic regulations ([Article 17.0](https://academic-regulations.humber.ca/2023-2024/17.0-ACADEMIC-MISCONDUCT)), we are required to notify our Associate Dean of any instances of academic misconduct. Your recent submission for Assignment 5 worth 9% has shown evidence of Generative AI use, and of possibly being shared with another student.
+
+Please book a meeting with your Associate Dean, Ahmed Sagarwala, using the following link - https://calendly.com/sagarwala. You are required to book this meeting within 5 business days. If a meeting does not take place within this timeframe, zero will be provided for the deliverable. 
+
+To help you understand academic misconduct, I recommend reviewing these two resources:
+
+Academic Integrity | Plagiarism: One Form of Academic Dishonesty [YouTube video ] https://www.youtube.com/watch?v=8_SxY2jpRFc
+Academic Integrity and Citation Awareness Module [Humber Library] https://library-elearning.humber.ca/academic-integrity/preview/module.html#/
+
+
+Sean Doyle
+
+
+
 //====== NOTIFICATION
 SUBJECT:
 Possible Incident of Academic Misconduct
@@ -46,6 +63,7 @@ Sean Doyle
 
 
 
+
 //====== RESULTS
 Hello Ragini,
 
@@ -63,6 +81,26 @@ We are all here to help and to support your success in the program - and as a we
 If you have any further questions, please do not hesitate to email me or set up a meeting.
 
 Sean
+=======
+//====== RESULTS ==============================================
+
+
+//====== GenAI ====
+This approach is akin to looking up the answer in the back of the book.  The challenge is to take the learning materials and deliver on the set learning objectives.  If there are any questions or confusions, the first place to look is the learning materials; the second place is to connect with the instructor.  Conversing with the instructor will give you the "whys and wherefores" and lead to deeper understanding, whereas GenAI will only give you the answers.
+
+Please don't hesitate to reach out - even after an assignment - to go through the code. There are many ways to manage the same task in code, so these discussions can bring out information we don't get to cover in class.
+
+
+/====
+While the use of GenAI as a coding helper will be expected of you in the industry, in our academic setting, its use is prohibited except where explicitly allowed by your instructor for a specific assessment. This is so that we can evaluate your work and your ability to deliver the learning objectives. A strong understanding of code is required to work with GenAI in order to assess its results, and the learning objectives we have set for you will lead you to that strong understanding. Similarly, the key skill of a web developer is not "coding", but problem solving. If you use a tool to solve your problems for you, you will not develop the problem solving skills that are so crucial to professional web development.
+
+Any future unauthorized use of AI in your course work may result in expulsion from the program, and having plagiarism on your Humber student record.
+
+If you have any questions or confusions about the use of AI as a student, please email me and we will clear up any outstanding issues.
+
+Thank you.
+
+
 
 
 SUBJECT:
@@ -101,7 +139,7 @@ In that meeting you acknowledged:
 -Arun was having difficulty working with Figma
 -You shared your Figma file with Arun
 
-In our last meeting on March 5 regarding plagiarism in the Front-End Development Lab 4, you assured me that the sharing of files would not happen again. In our discussion (and the follow-up email) you were warned that the outcome for any future incident in any other course would be a final grade of zero for that course. Accordingly, this incident will mean a final grade of zero for the Web Design course.
+In our last meeting on March 5 regarding plagiarism in the Front-End Development Lab 4, you assured me that the sharing of files would not happen again. I our discussion (and the follow-up email) you were warned that the outcome for any future incident in any other course would be a final grade of zero for that course. Accordingly, this incident will mean a final grade of zero for the Web Design course.
 
 While outcomes such as this are not what either of us had wished for, they are necessary to maintain the integrity of the Web Development program. However, I wish you the best for your future endeavours.
 
