@@ -2,7 +2,7 @@ javascript:(()=>{
 	var x=document.getElementsByTagName("img");
 	var txt="<h1>alt Attribute Report</h1><table>";
 	Array.from(x).forEach((image)=>{
-		let at=image.getAttribute("alt")===null ? "<em>MISSING ALT</em>":image.getAttribute("alt");
+		let at=image.getAttribute("alt")===null ? "<em>is MISSING ALT attribute.</em>":image.getAttribute("alt");
 		txt+="<tr><td>";
 		txt+=image.src.substring(image.src.lastIndexOf('/')+1)+"</td><td>"+at+"</td></tr>";
 	});
