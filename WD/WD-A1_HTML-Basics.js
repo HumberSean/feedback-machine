@@ -3,7 +3,7 @@
 
 var feedBack = [];
 
-var item0=["FEEDBACK", "Great job!", "Good job. See rubric for more feedback.", "Please put your name in your filename when you submit. Thank you!", "Please put all submission files in one folder to zip and submit."];
+var item0=["FEEDBACK", "Great job!", "Good job. See rubric for more feedback.", "Please put your name in your filename when you submit. Thank you!", "Please put all submission files in one folder to zip and submit.", "I appreciate "];
 var item1=["HTML MARKUP", "A &lt;q> element would be more appropriate for a single line quote.", "The &lt;a> tag should go inside the &lt;p> and around the &lt;img> because it is an inline element."];
 var item2=["DOCUMENT & FILE FORMAT", "Use tabs to visually show which elements are inside which elements."];
 var item3=["EFFECTIVE CONTENT"];
