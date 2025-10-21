@@ -1,6 +1,8 @@
 /* Feedback Machine by Sean Doyle
 Create feedback items with categories to paste into student feedback.
 
+v 2.7 October 2025
+-Fix HTML entity bug by switching to innerText not innerHTML.
 v 2.6 November 2024
 -Keep main feedback heading checked when resetting.
 v 2.5 April 2024
@@ -58,7 +60,7 @@ function getSelected(){
     var fullString = "";
 	var headingRX = /^[A-Z]{4}/;
     for(let i = 0; i < allChecked.length; i++){
-        let labelText = allChecked[i].nextElementSibling.innerHTML;
+        let labelText = allChecked[i].nextElementSibling.innerText;
 		
 		if (headingRX.test(labelText) && i !== 0){
 			labelText = "\n" + labelText;
