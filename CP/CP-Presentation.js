@@ -4,7 +4,7 @@
 
 var feedBack = [];
 
-var item0=["PROJECT DEPLOYMENT"];
+var item0=["PROJECT DEPLOYMENT", "Not deployed for presentation."];
 var item1=["PROJECT PURPOSE", "Who is this site for?", "A technical description, but missing the human problem it's solving."];
 var item2=["TECHNOLOGY USED", "What is your tech stack?"];
 var item3=["FEATURE LEVEL ACHIEVED", "How much of your original plan did you achieve? Must Have; Should Have; Nice to Have?"];
