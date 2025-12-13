@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--MODIFIED FROM A TUTORIAL FOUND AT view-source:https://web-dot-devsite-v2-prod-3p.appspot.com/patterns/media/screen-record/demo
+AND
+https://github.com/ikechukwu-peter/screen-recorder
+
+v 1.1
+-->
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScreenRecorder</title>
+<style>
+  body {
+	margin: 1rem;
+	font-family: system-ui, sans-serif;
+  }
+  h1 {margin-bottom: 0;}
+  ol {margin-top: 0;}	  
+  button {
+	display: inline-block;
+	margin-bottom: 4px;
+  }
+  video {
+	display: block;
+	margin-top: 10px;
+	max-width: 100%;
+	background: black;
+	max-height: 480px;
+  }
+  pre {
+	color: green;
+	white-space: pre-line;
+  }
+  .start{background-color: #b3f5b3; border-color: green;}
+  .stop{
+	background-color: #f0b5b5; 
+	border-color: red;
+	margin-right: 20px;
+  }
+</style>
+</head>
+<body>
+    <h1>Screen Recorder</h1>
+	<ol>		
+		<li>Open Assignment in Chrome</li>
+		<li>Open <code>ScreenRecorderSWD.html</code> (in Marking folder), click 'Start sharing screen'.</li>
+		<li>Select microphone</li>
+		<li>Select Assignment Under Chrome tab, you don't need 'share tab audio'.</li>
+		<li>Select 'Start recording', choose folder and set filename: <em>coursecode</em><strong>-Assignment-</strong><em>Assignment Number</em><strong>-Demo_Video.webm</strong>.</li>
+	</ol>
+	
+<!--BUTTONS-->
+    <button id="startShareScreenButton" class="start">Start sharing screen</button>
+    <button id="stopShareScreenButton" class="stop" disabled>Stop sharing screen</button>
+	<br>
+    <button id="startRecordButton" class="start" disabled>Start recording</button>
+    <button id="stopRecordButton" class="stop" disabled>Stop recording</button>
+	
+<!--OUTPUT-->
+	<!--VIDEO PLAYBACK MONITOR-->
+    <video autoplay muted playsinline></video>
+	
+	<!--OUTPUT STATUS MESSAGES-->
+    <div><pre id="logs"></pre></div>
+	
+	
+<script>
+  //GET HTML ELEMENTS
+  const video = document.querySelector('video');
+  const startShareScreenButton = document.querySelector('#startShareScreenButton');
+  const stopShareScreenButton = document.querySelector('#stopShareScreenButton');
+  const startRecordButton = document.querySelector('#startRecordButton');
+  const stopRecordButton = document.querySelector('#stopRecordButton');
+
+  //LOGIC VARIABLES
+  let stream;//getDisplayMedia() returns a promise that resolves to a MediaStream.
+  let recorder;//Instance of the MediaRecorder object that receives the MediaStream.
+  let userMediaStream;//Combo of display and audio streams.
+  const displayMediaOptions = {
+	video: true/*,
+	audio: true,
+	systemAudio: "include",
+	windowAudio: "system"*/
+  };
+
+//==== SCREEN CAPTURE FUNCTIONS ====
+//START SHARING
+  startShareScreenButton.addEventListener("click", async () => {
+	// Prompt the user to share their microphone.
+	audioStream = await navigator.mediaDevices.getUserMedia({
+		audio: true,
+		echoCancellation: true,
+		noiseSuppression: true,
+		sampleRate: 44100,
+		suppressionLocalAudioPlayback: true
+	});
+	
+	// Prompt the user to share their screen.
+	stream = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
+	
+	//Create a media stream from the audio and screen streams.
+	userMediaStream = new MediaStream([
+		...stream.getTracks(),
+		...audioStream.getTracks()
+	]);
+	
+	recorder = new MediaRecorder(userMediaStream);
+	// Preview the screen locally.
+	video.srcObject = userMediaStream;
+
+	startShareScreenButton.disabled = true;
+	startRecordButton.disabled = false;
+	stopShareScreenButton.disabled = false;
+	log("Screen sharing started.");
+  });
+
+//STOP SHARING
+  stopShareScreenButton.addEventListener("click", () => {
+	// Stop the stream.
+	stream.getTracks().forEach(track => track.stop());//End the MediaStream for each track.
+	audioStream.getTracks().forEach(track => track.stop());//End the MediaStream for each track.
+	video.srcObject = null;
+
+	stopShareScreenButton.disabled = true;
+	startRecordButton.disabled = true;
+	stopRecordButton.disabled = true;
+	startShareScreenButton.disabled = false;
+	log("Screen sharing ended.");
+  });
+
+//START RECORDING
+  startRecordButton.addEventListener("click", async () => {
+	// Prompt the user to choose where to save the recording file.
+	const suggestedName = "HTTP-XXXX-Assignment-XX-Demo_Video.webm";
+	const handle = await window.showSaveFilePicker({ suggestedName });
+	const writable = await handle.createWritable();
+
+	// Start recording.
+	recorder.start();
+	recorder.addEventListener("dataavailable", async (event) => {
+	  // Write chunks to the file.
+	  await writable.write(event.data);
+	  if (recorder.state === "inactive") {
+		// Close the file when the recording stops.
+		await writable.close();
+	  }
+	});
+	
+	startRecordButton.disabled = true;
+	stopRecordButton.disabled = false;
+	log("Screen recording started.");
+  });
+
+
+//STOP RECORDING
+  stopRecordButton.addEventListener("click", () => {
+	// Stop the recording.
+	recorder.stop();//MediaRecorder stop() method. Stop media capture and create a BLOB.
+
+	stopRecordButton.disabled = true;
+	startRecordButton.disabled = false;
+	log("Screen recording completed.");
+  });
+
+//==== Utility Functions ====
+  function log(text) {
+	document.querySelector('#logs').textContent += `${text}\r\n`;
+  }
+
+  window.onunhandledrejection = (event) => {
+	log(`> ${event.reason}`);
+	//sent to the global scope of a script when a JavaScript Promise (in this case, from getDisplayMedia()) that has no rejection handler is rejected; 
+  };
+  window.onerror = (error) => {
+	log(`> ${error}`);//CATCHES GENERIC ERRORS.
+  };
+</script>
+</body>
+</html>
