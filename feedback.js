@@ -1,6 +1,9 @@
 /* Feedback Machine by Sean Doyle
 Create feedback items with categories to paste into student feedback.
 
+v 3.0 January 2026
+-Add file creation and download functionality.
+
 v 2.7 October 2025
 -Fix HTML entity bug by switching to innerText not innerHTML.
 v 2.6 November 2024
@@ -46,11 +49,12 @@ let txt_heading = document.getElementById("newHead");
 let btn_heading = document.getElementById("btn_newHead");
 let btn_load = document.getElementById("filebox_load");
 let btn_save = document.getElementById("filebox_save");
+let fileText = document.getElementById("filebox_label");
 let scriptTag = document.getElementById("ext_script");
 let inputBox = document.getElementById("controls");
 
 let newText = commentForm.newFb_txt;
-
+var loadedFileName = "";
 
 /** GET CHECKED ITEMS AND COPY TO CLIPBOARD
 */
@@ -77,7 +81,7 @@ function getSelected(){
 /** GET ALL FEEDBACK BLOCKS AND CREATE JS FILE TEXT
 */
 function saveFile() {
-	var jsText = "//\n\n\nvar feedBack = [];\n\n"
+	var jsText = "//" + fileText.value + "\n\n\nvar feedBack = [];\n\n"
 	var pushText = "\n\nfeedBack.push(";
 	
 	let allBlocks = document.getElementsByClassName("heading");
@@ -118,9 +122,16 @@ function saveFile() {
 	
 	jsText += pushText;//Append array push text
 
-//Copy to clipboard
-    navigator.clipboard.writeText(jsText);
-	alert("Your file has been copied.\nPaste into a new file and save as .js");
+	//Create a new file and download it.
+	const textBlob = new Blob([jsText], {type: 'text/javascript'});
+	var dwnlodLink = document.createElement('a');
+	dwnlodLink.href = URL.createObjectURL(textBlob);
+	dwnlodLink.download = loadedFileName;
+	dwnlodLink.click();
+
+//From version 2, copy to clipboard functionality.
+    //navigator.clipboard.writeText(jsText);
+	//alert("Your file has been copied.\nPaste into a new file and save as .js");
 }//end saveFile
 
 
@@ -293,13 +304,13 @@ function loadFile(){
 function getFile(){
 	let fullPath = btn_load.value;
 	//Get filename
-	let fileName = fullPath.substring(12);
+	loadedFileName = fullPath.substring(12);
 	//Get foldername from first 2 chars of filename
 	let folder = fullPath.substring(12,14);	
 
 	let newScript = document.createElement('script');
 	newScript.onload = loadFile;
-	newScript.src = folder + "/" + fileName;
+	newScript.src = folder + "/" + loadedFileName;
 	document.head.appendChild(newScript);
 	headerText.style.display = "none";
 }//end getFile
