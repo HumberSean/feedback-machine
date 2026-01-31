@@ -1,6 +1,9 @@
 /* Feedback Machine by Sean Doyle
 Create feedback items with categories to paste into student feedback.
 
+v 3.1 January 2026
+-Add file creation and download functionality. Bring back copy-to-clipboard functionality as an option.
+
 v 3.0 January 2026
 -Add file creation and download functionality.
 
@@ -48,6 +51,7 @@ let blurbContainer = document.getElementById("blurbBox");
 let txt_heading = document.getElementById("newHead");
 let btn_heading = document.getElementById("btn_newHead");
 let btn_load = document.getElementById("filebox_load");
+let btn_copy = document.getElementById("filebox_copy");
 let btn_save = document.getElementById("filebox_save");
 let fileText = document.getElementById("filebox_label");
 let scriptTag = document.getElementById("ext_script");
@@ -80,7 +84,7 @@ function getSelected(){
 
 /** GET ALL FEEDBACK BLOCKS AND CREATE JS FILE TEXT
 */
-function saveFile() {
+function saveFile(ev) {
 	var jsText = "//" + fileText.value + "\n\n\nvar feedBack = [];\n\n"
 	var pushText = "\n\nfeedBack.push(";
 	
@@ -121,17 +125,21 @@ function saveFile() {
 	}//end loop through blocks
 	
 	jsText += pushText;//Append array push text
+	
+	//Copy or download based on button clicked: copy to clipboard, or save to new file.
+	if(ev.target.id === "filebox_copy"){
+		//Copy to clipboard.
+		navigator.clipboard.writeText(jsText);
+		alert("Your file has been copied.\nPaste into your previously saved file.");
+	} else if (ev.target.id === "filebox_save"){
+		//Create a new file and download it.
+		const textBlob = new Blob([jsText], {type: 'text/javascript'});
+		var dwnlodLink = document.createElement('a');
+		dwnlodLink.href = URL.createObjectURL(textBlob);
+		dwnlodLink.download = loadedFileName;
+		dwnlodLink.click();
+	}
 
-	//Create a new file and download it.
-	const textBlob = new Blob([jsText], {type: 'text/javascript'});
-	var dwnlodLink = document.createElement('a');
-	dwnlodLink.href = URL.createObjectURL(textBlob);
-	dwnlodLink.download = loadedFileName;
-	dwnlodLink.click();
-
-//From version 2, copy to clipboard functionality.
-    //navigator.clipboard.writeText(jsText);
-	//alert("Your file has been copied.\nPaste into a new file and save as .js");
 }//end saveFile
 
 
@@ -343,6 +351,7 @@ copyBtn.onclick = getSelected;
 resetBtn.onclick = resetSelections;
 document.getElementById("mainHeading").onclick = resetSelections;
 btn_load.onchange = getFile;
+btn_copy.onclick = saveFile;
 btn_save.onclick = saveFile;
 document.getElementById("left").onfocus = switchSides;
 document.getElementById("right").onfocus = switchSides;
