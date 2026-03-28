@@ -1,6 +1,9 @@
 /* Feedback Machine by Sean Doyle
 Create feedback items with categories to paste into student feedback.
 
+TODO:
+-fix loading issue. Use var instead of const for heading array variables?
+
 v 3.1 January 2026
 -Add file creation and download functionality. Bring back copy-to-clipboard functionality as an option.
 
