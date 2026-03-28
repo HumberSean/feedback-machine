@@ -35,7 +35,7 @@ Sean Doyle
 SUBJECT:
 Possible Incident of Academic Misconduct
 
-Hello Arun,
+Hello ZZZZ,
 
 An issue of possible plagiarism has been detected in your Lab 4 for Front-End Web Development.
 
@@ -47,7 +47,7 @@ Thank you.
 
 
 
-Hello Dhruv,
+Hello ZZZZ,
 
 An issue of possible plagiarism has been detected in your Assignment 5 for Front-End Web Development.
 
@@ -65,7 +65,7 @@ Sean Doyle
 
 
 //====== RESULTS
-Hello Ragini,
+Hello ZZZZ,
 
 Thank you for meeting with me today to discuss the issue of academic misconduct regarding the Assignment 5 in Front-End Web Development.  
 
@@ -106,7 +106,7 @@ Thank you.
 SUBJECT:
 Academic Misconduct Follow-up
 
-Hello Jinal,
+Hello ZZZZ,
 
 Thank you for meeting with me yesterday to discuss the issue of academic misconduct regarding the Express API Assignment in Full-Stack Web Development.  
 
@@ -131,7 +131,7 @@ SUBJECT:
 Academic Misconduct Determination
 
 
-Hello Saahil,
+Hello ZZZZ,
 
 Thank you for meeting with me on Tuesday to discuss the issue of academic misconduct regarding the Figma Assignment in Web Design (HTTP 5121).  
 
@@ -149,7 +149,7 @@ Sean Doyle
 
 
 
-Hello Arun,
+Hello ZZZZ,
 
 Thank you for meeting with me yesterday to discuss the issue of academic misconduct regarding the Figma Assignment in Web Design (HTTP 5121).  
 
@@ -168,7 +168,7 @@ Sean Doyle
 
 
 Assignment 5 Misconduct Meeting
-Hi Emmanuel,
+Hi ZZZZ,
 
 Link sent for online meeting today at 3:15.
 
@@ -180,7 +180,7 @@ While working on the assignment, I was stuck on the alt attribute for images. In
 
 
 //USE OF GENAI
-Hi Chait,
+Hi ZZZZ,
 
 Thank you, I greatly appreciate your honesty.
 
