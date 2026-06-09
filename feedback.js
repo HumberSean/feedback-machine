@@ -2,7 +2,10 @@
 Create feedback items with categories to paste into student feedback.
 
 TODO:
--fix loading issue. Use var instead of const for heading array variables?
+
+
+v 3.2 June 2026
+-Set filename template for download functionality.
 
 v 3.1 January 2026
 -Add file creation and download functionality. Bring back copy-to-clipboard functionality as an option.
@@ -139,7 +142,7 @@ function saveFile(ev) {
 		const textBlob = new Blob([jsText], {type: 'text/javascript'});
 		var dwnlodLink = document.createElement('a');
 		dwnlodLink.href = URL.createObjectURL(textBlob);
-		dwnlodLink.download = loadedFileName;
+		dwnlodLink.download = "XX-AssignmentName.js";
 		dwnlodLink.click();
 	}
 
